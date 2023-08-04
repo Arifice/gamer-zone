@@ -5,3 +5,124 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
+#youtube-image{
+    max-width: 50px;
+    height: 30px;
+}
+header{
+    margin: 0 200px;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.game-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.g{
+    color: #FF42A5;
+    font-weight: 700;
+}
+.about-developer ul{
+    display: flex;
+    
+}
+.about-developer ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+.about-developer ul a{
+    text-decoration: none;
+}
+.follow{
+    display: flex;
+    align-items: center;
+    padding:0 5px;
+    gap: 10px;
+    border: 2px solid steelblue;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+.follow a{
+    text-decoration: none;
+}
+.header-bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.header-content{
+    margin: auto;
+}
+.pink-btn{
+    background-color: #FF42A5;
+    color: #FFF;
+    border-radius: 20px;
+    padding:  10px;
+    margin-top: 10px;
+}
+.sky-btn{
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    color: #FFF;
+    padding: 10px;
+    margin-top: 10px;
+}
+.header-content h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+}
+.header-content h1{
+    font-weight: 800;
+    font-size: 60px;
+    color: rgb(209, 49, 214);
+}
+.header-content li{
+    list-style: none;
+}
+.header-image-container img{
+    width: 100%;
+}
+.header-last{
+    display: flex;
+    align-items: center;
+}
+.header-last div{
+    text-align: right;
+}
+.title{    
+    font-family: Work Sans;
+    font-size: 48px;    
+    font-weight: 700;
+    color:  #7653c7;      
+}
+
+@media screen and (max-width:576px) {
+   header{
+    margin: 10px;
+    padding: 10px;
+   }
+    
+    nav{
+        flex-direction: column; 
+        margin-bottom:20px;
+        gap: 20px;     
+    }
+    .header-bottom{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }  
+    .header-last{
+        flex-direction: column; 
+              
+    }
+    .header-last img{
+        width: 100%;
+    }
