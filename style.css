@@ -58,7 +58,11 @@ nav{
     grid-template-columns: repeat(2, 1fr);
 }
 .header-content{
-    margin: auto;
+    margin: auto;   
+    
+}
+.header-content{
+    background-image: url('images/group 14.png');
 }
 .pink-btn{
     background-color: #FF42A5;
@@ -179,7 +183,8 @@ main{
     
     .girl , .horse{
         flex-direction: column;
-        gap: 50px;        
+        gap: 50px;  
+        width: 100%;      
     }  
     .horse-pic , .girl-pic{
         width: 100%;
