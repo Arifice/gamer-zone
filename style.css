@@ -5,13 +5,29 @@
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
 }
-#youtube-image{
-    max-width: 50px;
-    height: 30px;
+/* common style */
+.text-line-gray{
+    color: #534C64;    
+    font-size: 1rem; 
+    margin-top: 1.25rem; 
 }
-header{
-    margin: 0 200px;
-    
+.title{   
+    font-size: 3rem;    
+    font-weight: 700;   
+}
+.title-color-style{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#youtube-image{
+    max-width: 3rem;
+    height: 3rem;
+}
+/* header style */
+header, main{
+    margin: 0 12.rem;    
 }
 nav{
     display: flex;
@@ -23,7 +39,7 @@ nav{
 .game-logo{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.3rem;
 }
 .g{
     color: #FF42A5;
@@ -35,8 +51,7 @@ nav{
 }
 .about-developer ul li{
     list-style: none;
-    margin-left: 20px;
-    
+    margin-left: 1.3rem;    
 }
 .about-developer ul a{
     text-decoration: none;
@@ -44,8 +59,9 @@ nav{
 .follow{
     display: flex;
     align-items: center;
-    padding:0 5px;
-    gap: 10px;
+    padding:0 .25rem;
+    gap: .8rem;
+    margin-top: .5rem;
     border: 2px solid steelblue;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
@@ -53,87 +69,114 @@ nav{
 .follow a{
     text-decoration: none;
 }
-.header-bottom{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.rotate{
+    transform: rotate(-90deg);
 }
-.header-content{
-    margin: auto;   
-    
+.top-banner{
+    display: flex;
+    align-items: center;   
 }
-.header-content{
-    background-image: url('images/group 14.png');
+.top-banner div{
+    flex: 1;
+}
+.top-banner-content{
+    padding-left: 6rem;
+    margin-left: 20rem;
+}
+.top-banner-content h1{    
+    font-size: 6rem;    
+    font-weight: 800;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+}
+.top-banner-content h3{
+    color: #0B0223;    
+    font-size: 3rem;     
+}
+.top-banner-content li{
+    color: #534C64;      
+    font-size: 1.25rem;    
+    font-weight: 500;    
+}
+.top-banner img{
+    width: 100%;
+}
+.bottom-banner-image-container img{
+    width: 100%;
+    height: 100%;
+}
+.bottom-banner{
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding: 0 6rem;
+}
+.bottom-banner div{
+    flex: 1;
+}
+.botom-banner-text{
+    padding-left: 4rem;
 }
 .pink-btn{
     background-color: #FF42A5;
     color: #FFF;
-    border-radius: 20px;
-    padding:  10px;
-    margin-top: 10px;
+    border-radius: 1rem;    
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
 .sky-btn{
-    background-color: cornflowerblue;
-    border-radius: 20px;
+    border-radius: 1rem;
+    background: #4EC5F7;
     color: #FFF;
-    padding: 10px;
-    margin-top: 10px;
+    padding: 1rem;
+    font-size: 1.25rem;
+    margin-top: 1rem;
 }
-.header-content h3{
-    font-size: 30px;
-    font-weight: 600;
-    color: black;
-}
-.header-content h1{
-    font-weight: 800;
-    font-size: 60px;
-    color: rgb(209, 49, 214);
-}
-.header-content li{
-    list-style: none;
-}
-.header-image-container img{
-    width: 100%;
-}
-.header-last{
-    display: flex;
-    align-items: center;
-}
-.header-last div{
-    text-align: right;
-}
-.title{    
-    font-family: Work Sans;
-    font-size: 48px;    
-    font-weight: 700;
-    color:  #7653c7;      
-}
-main{
-    margin: 0 200px;
+/* main section style */
+
+.online-games-title{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
 }
 .card-container{
-    display: flex;
-    justify-content: space-around; 
-    gap: 20px;   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.3rem;   
 }
 .card img{
     width: 100%;
-    height: 400px;
+    height: 25rem;
     border-radius: 2px;
 }
-.banner-title{
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 50px;
+
+.horse{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4.5rem;    
+    margin-top: 2rem;
 }
-.banner-title h3{
-    font-weight: 800;
-    font-size: 48px;
-}
-.horse , .girl{
+.girl{
     display: flex;
-    align-items: center;    
-    gap: 200px;
-    margin-top: 50px;
+    gap: 3.5rem;    
+}
+.horse , .girl div{
+    width: 100%;
+}
+
+
+/* .girl{
+    display: grid;
+    grid-template-columns:60%  40%;
+    gap: 2.5rem;    
+    margin-top: 3rem;
+} */
+.girl-content ,.horse-content{
+    margin: auto;
+    padding: 2.5rem;
 }
 .horse-pic{
     width: 100%;
@@ -141,53 +184,94 @@ main{
 .girl-pic{
     width: 100%;
 }
-/* .girl{
-    display: flex;
-} */
 .badge1{
     position: relative;
-    right: 100px;
-    bottom: 200px;
+    right: 6.5rem;
+    bottom: 12.5rem;
 }
 .badge2{
     position: relative;
-    left: 300px;
-    bottom: 200px;
+    left: 18.75rem;
+    bottom: 12.5rem;
 }
+.career{
+    background-color: #FF42A5;
+    display: flex;
+    align-items: center;
+}
+.carrer-content{
+    padding: 5rem;
+    color: #FFF;
+}
+.career-list{
+    display: flex;
+    margin-top: 1.3rem;
+    
+    
+}
+.career-left-list li{
+    text-align: left;
+    list-style: none;
+}
+.career-right-list li{
+    text-align: right;
+    list-style: none;
+}
+.career-image  img{
+    width: 80%;
+    position: relative;
+    right: 0;
+}
+/* .girl{
+    display: flex;
+} */
+
 @media screen and (max-width:576px) {
    header, main{
-    margin: 20px;
-    padding: 50px;
-   }
-    
+    margin: .5rem;
+    padding: .5rem;
+   }    
     nav{
         flex-direction: column; 
-        margin-bottom:20px;
-        gap: 20px;     
+        margin-bottom:1.3rem;
+        gap: 1.3rem;     
     }
-    .header-bottom{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-    }  
-    .header-last{
-        flex-direction: column; 
-        gap: 20px;
-              
-    }
-    .header-last img{
-        width: 100%;
-    }
-    .card-container{
+    .top-banner{
         flex-direction: column;
+        padding: .3rem;
+    }
+    .top-banner-content{
+        margin-left: .3rem;
+        padding: .3rem;
+    }
+    .bottom-banner{
+        flex-direction:column-reverse;
+        padding: .3rem;
+    }  
+    .card-container{
+        grid-template-columns:1fr;
     } 
     
-    .girl , .horse{
-        flex-direction: column;
-        gap: 50px;  
-        width: 100%;      
-    }  
-    .horse-pic , .girl-pic{
+    .horse{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .girl{
+        flex-direction: column-reverse;        
+    }
+    .horse-pic-container, .girl-pic-container{
         width: 100%;
-        padding: 50px;
+    }
+    
+    /* .horse-pic , .girl-pic ,.badge2, .badge1{
+        width: 100%;
+        padding: 1rem;
+        margin: auto;
+    } */
+    .career{
+        flex-direction: column;
+    }
+    .career-list{
+        flex-direction: column;
     }
 }
