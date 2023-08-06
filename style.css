@@ -4,6 +4,7 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
+    background-color: cadetblue;
 }
 /* common style */
 .text-line-gray{
@@ -153,35 +154,42 @@ nav{
     border-radius: 2px;
 }
 
-.horse{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 4.5rem;    
-    margin-top: 2rem;
-}
-.girl{
+.horse-section{
     display: flex;
-    gap: 3.5rem;    
+    align-items: center;
+    margin-top: 2rem;
+    gap: 4rem;
 }
-.horse , .girl div{
+.horse-pic-container{
+    padding: 6rem;
+}
+.horse-content{
+    margin: 6rem;
+    text-align: center;
+}
+.horse-content p{
+    max-width: 18rem;
+}
+.horse-section .horse-pic{
     width: 100%;
+} 
+.girl-section{
+    display: flex;
+    gap: 6rem; 
+    align-items: center;
+    margin-top: 1rem ;   
 }
-
-
-/* .girl{
-    display: grid;
-    grid-template-columns:60%  40%;
-    gap: 2.5rem;    
-    margin-top: 3rem;
-} */
-.girl-content ,.horse-content{
-    margin: auto;
-    padding: 2.5rem;
+.girl-content{
+    text-align: center;
+    
 }
-.horse-pic{
-    width: 100%;
+.girl-content p{
+    max-width: 18rem;
 }
-.girl-pic{
+.horse-sction , .girl-section div{
+    flex: 1;
+}
+.horse-pic ,.girl-pic{
     width: 100%;
 }
 .badge1{
@@ -191,8 +199,8 @@ nav{
 }
 .badge2{
     position: relative;
-    left: 18.75rem;
-    bottom: 12.5rem;
+    left: 43rem;
+    bottom: 15rem;
 }
 .career{
     background-color: #FF42A5;
@@ -252,22 +260,33 @@ nav{
         grid-template-columns:1fr;
     } 
     
-    .horse{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 1rem;
+    .horse-section{
+        flex-direction: column;        
+        gap: .5rem; 
+        margin-top: 1rem;      
     }
-    .girl{
-        flex-direction: column-reverse;        
+    .girl-section{
+        flex-direction: column-reverse; 
+        margin-top: 1rem;       
     }
-    .horse-pic-container, .girl-pic-container{
+    .horse-content, .girl-content{
+        margin: .5rem;
+    }
+    .horse-pic-container{
         width: 100%;
+        margin: 0 3rem;
+        /* padding: .5rem; */
     }
-    
-    /* .horse-pic , .girl-pic ,.badge2, .badge1{
-        width: 100%;
-        padding: 1rem;
-        margin: auto;
-    } */
+    .badge1{
+        width: 60%;
+        right: 2rem;
+        height: 60%;       
+    }
+    .badge2{
+        width: 60%;
+        left:12rem ;
+        bottom:6rem            
+    }    
     .career{
         flex-direction: column;
     }
