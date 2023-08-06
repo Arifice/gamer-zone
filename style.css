@@ -4,7 +4,7 @@
     font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Work Sans', sans-serif;
-    background-color: cadetblue;
+    
 }
 /* common style */
 .text-line-gray{
@@ -27,7 +27,7 @@
     height: 3rem;
 }
 /* header style */
-header, main{
+header, main, footer{
     margin: 0 12.rem;    
 }
 nav{
@@ -230,9 +230,32 @@ nav{
     position: relative;
     right: 0;
 }
-/* .girl{
-    display: flex;
-} */
+footer{
+    background: #0B0223;    
+    color: #FFF; 
+     
+}
+
+.row-2 , .row-4,.row-5{
+    text-align: center;
+    /* margin: 1rem 0; */
+    padding: 1rem 0;     
+}
+.row-2 li ,.row-4 li{
+    display: inline;
+    list-style: none; 
+    margin-left: 4rem;
+    font-size: 1rem;    
+    font-weight: 600;      
+}    
+.row-3{
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+    /* margin: 2rem 4rem;     */
+}
+
+
 
 @media screen and (max-width:576px) {
    header, main{
@@ -293,4 +316,20 @@ nav{
     .career-list{
         flex-direction: column;
     }
+    .row-2{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .row-3{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 2.5rem;        
+    }
+    .row-4{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        gap: 2.5rem;
+        }
 }
